@@ -1,0 +1,25 @@
+﻿@using RegistroEstudiantes.Models.ViewModels
+@model List<ViewModel_Estudiantes_Profesor>
+@{
+    Layout = null;
+}
+<table class="table_registros">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Materia</th>
+            <th>Profesor</th>           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var estudiante in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(m=>estudiante.NombreEstudiante)</td>
+                <td>@Html.DisplayFor(m=>estudiante.Materia)</td>
+                <td>@Html.DisplayFor(m=>estudiante.NombreProfesor)</td>          
+            </tr>
+        }
+    </tbody>
+
+</table>

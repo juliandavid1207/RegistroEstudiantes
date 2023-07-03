@@ -1,0 +1,50 @@
+﻿@using RegistroEstudiantes.Models.ViewModels
+@model ViewModel_MateriasEstudiante
+<script>
+    //$(document).ready(function () {
+    //    $('#btnListarRegistros').click(function () {
+    //        var selectedValue = $('#slMaterias').val();
+    //        $('#data_estudiantes').load("/Registros/ListaEstudiantes/"+selectedValue);
+    //    });
+    //});
+
+    $(document).ready(function () {
+        $('#btnListarRegistros').click(function () {
+            var selectedValue = $('#select_materia').val();
+            var data = selectedValue          
+
+            console.log(data);
+            $('#data_estudiantes').show();
+            $.ajax({
+                url: '/Registros/ListaEstudiantes',
+                type: 'POST', 
+                data: JSON.stringify(data), 
+                contentType: 'application/json; charset=utf-8',
+                success: function (result) {
+                    $('#data_estudiantes').html(result);
+                },
+                error: function (xhr, status, error) {
+                    console.log(error); 
+                }
+            });
+        });
+    });
+</script>
+<div class="row mt-4">
+    <div class="col-md-3">
+        <label for="select_materia">Materia</label>
+    </div>
+    <div class="col-md-3">
+        <select class="form-control" id="select_materia" required>
+            <option>Seleccione una materia</option>
+            @foreach (var item in Model.Materias)
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        </select>
+    </div>
+    <div class="col-md-3">
+        <input type="submit" id="btnListarRegistros" class="btn btn-primary btn-lg" value="Listar registros" />
+    </div>
+</div>
+

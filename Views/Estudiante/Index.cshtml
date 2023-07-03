@@ -1,0 +1,45 @@
+﻿@model RegistroEstudiantes.Models.Estudiante
+
+@{
+    Layout = "_Layout";
+}
+@if (TempData["MensajeConfirmacion"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["MensajeConfirmacion"]
+    </div>
+}
+@if (TempData["MensajeError"] != null)
+{
+    <div class="alert alert-warning">
+        @TempData["MensajeError"]
+    </div>
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Crear estudiante</title>
+</head>
+<body>
+    <div>
+        <form action="/Estudiante/Create" method="post">
+            <div class="form-group col-md-6">
+                <label for="nombre_estudiante">Nombre:</label>
+                <input type="text" id="nombre_estudiante" pattern="^(?!\s*$).+" required name="Nombre" class="form-control" value="@Model.Nombre" />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="apellido_estudiante">Apellido:</label>
+                <input type="text" id="apellido_estudiante" pattern="^(?!\s*$).+" name="Apellido" required class="form-control" value="@Model.Apellido" />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="identificacion_estudiante">Número identificación:</label>
+                <input type="number" id="identificacion_estudiante" pattern="^(?!\s*$).+" ty name="NumIdentificacion" required class="form-control" value="@Model.NumIdentificacion" />
+            </div>
+            <button type="submit" class="btn btn-primary mt-4">Crear</button>
+        </form>
+
+
+    </div>
+ 
+</body>
+</html>

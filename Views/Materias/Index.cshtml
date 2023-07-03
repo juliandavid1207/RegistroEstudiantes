@@ -1,0 +1,68 @@
+﻿@using RegistroEstudiantes.Models.ViewModels
+@model ViewModel_MateriasEstudiante
+@{
+    Layout = "_Layout";
+}
+@if (TempData["MensajeConfirmacion"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["MensajeConfirmacion"]
+    </div>
+}
+@if (TempData["MensajeError"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["MensajeError"]
+    </div>
+}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registrar materias</title>
+</head>
+<body>
+    <div>
+        <form action="/Materias/Create" method="post">
+            <div class="form-group col-md-6">
+                <label for="nombre_estudiante">Identificación estudiante:</label>
+                <input type="number" required id="identificacion_estudiante" pattern="^(?!\s*$).+" name="NumIdentificacion" class="form-control" />
+            </div>
+            <div class="form-group col-md-6">
+                <label for="select_materia1">Materia 1:</label>
+                <select class="form-control" id="select_materia1" name="materia1" required>
+                    <option value="">Seleccione una materia</option>
+                    @foreach (var item in Model.Materias)
+                    {
+                        <option value="@item.Value">@item.Text</option>
+                    }
+                </select>      
+
+            </div>
+            <div class="form-group col-md-6">
+                <label for="select_materia2">Materia 2:</label>
+                <select class="form-control" id="select_materia2" name="materia2" required>
+                    <option value="">Seleccione una materia</option>
+                    @foreach (var item in Model.Materias)
+                    {
+                        <option value="@item.Value">@item.Text</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="select_materia3">Materia 3:</label>
+                <select class="form-control" id="select_materia3" name="materia3" required>
+                    <option value="">Seleccione una materia</option>
+                    @foreach (var item in Model.Materias)
+                    {
+                        <option value="@item.Value">@item.Text</option>
+                    }
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary mt-4">Registrar materias</button>
+        </form>
+
+
+    </div>
+
+</body>
+</html>

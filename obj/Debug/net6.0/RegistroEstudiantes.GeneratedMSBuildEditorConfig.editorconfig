@@ -1,0 +1,65 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RegistroEstudiantes
+build_property.RootNamespace = RegistroEstudiantes
+build_property.ProjectDir = C:\Users\jotalora\OneDrive - FAM Team\Desktop\Prueba interrapidisimo\RegistroEstudiantes\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\jotalora\OneDrive - FAM Team\Desktop\Prueba interrapidisimo\RegistroEstudiantes
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Views/Estudiante/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Views/Materias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Views/Registros/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Views/Registros/ListaEstudiantes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXExpc3RhRXN0dWRpYW50ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Views/Registros/ListaMaterias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0cm9zXExpc3RhTWF0ZXJpYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jotalora/OneDrive - FAM Team/Desktop/Prueba interrapidisimo/RegistroEstudiantes/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-r9x6agka4t
